@@ -452,41 +452,7 @@ if ($message['type'] == 'text') {
 }
 #-------------------------[Close]-------------------------#
 #-------------------------[Open]-------------------------#
-if($message['type']=='text') {
-        if ($command == '/coolt') { 
-     
-        $result = coolt($options);
-        $balas = array( 
-            'replyToken' => $replyToken, 
-            'messages' => array( 
-                array ( 
-                        'type' => 'template', 
-                          'altText' => 'Cool Text', 
-                          'template' =>  
-                          array ( 
-                            'type' => 'buttons', 
-                            'thumbnailImageUrl' => $result, 
-                            'imageAspectRatio' => 'rectangle', 
-                            'imageSize' => 'cover', 
-                            'imageBackgroundColor' => '#FFFFFF', 
-                            'title' => 'Cool Text Generator V1.0', 
-                            'text' => 'Link Image', 
-                            'actions' =>  
-                            array ( 
-                              0 =>  
-                              array ( 
-                                'type' => 'uri', 
-                                'label' => 'Click Here', 
-                                'uri' => $result, 
-                              ), 
-                            ), 
-                          ), 
-                        ) 
-            ) 
-        ); 
-    }
-}
-#-------------------------[Close]-------------------------#
+
 #-------------------------[Open]-------------------------#
 if($message['type']=='text') {
         if ($command == '/zodiak') {
