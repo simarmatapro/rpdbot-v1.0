@@ -202,7 +202,7 @@ function qibla($keyword) {
 }
 //show menu, saat join dan command,menu
 if ($command == 'Help') {
-    $text .= "「Keyword RpdBot~」\n\n";
+    $text .= "「Keyword JojoWikWik~」\n\n";
     $text .= "- Help\n";
     $text .= "- /jam \n";
     $text .= "- /quotes \n";
@@ -216,7 +216,7 @@ if ($command == 'Help') {
     $text .= "- /zodiak [tanggal lahir] \n";
 		$text .= "- /instagram [unsername] \n";
     $text .= "- /creator \n";
-	$text .= "\n「Done~」";
+	$text .= "\n「Done~ Provided by GabzBot」";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -513,7 +513,7 @@ if($message['type']=='text') {
             'messages' => array( 
                 array ( 
                         'type' => 'template', 
-                          'altText' => 'About Creator BedBotdzs', 
+                          'altText' => 'About Creator JojoBot', 
                           'template' =>  
                           array ( 
                             'type' => 'buttons', 
@@ -521,15 +521,15 @@ if($message['type']=='text') {
                             'imageAspectRatio' => 'rectangle', 
                             'imageSize' => 'cover', 
                             'imageBackgroundColor' => '#FFFFFF', 
-                            'title' => 'Muhammad Raihan Permadi', 
-                            'text' => 'Creator BedBotdzs', 
+                            'title' => 'Gabz', 
+                            'text' => 'Creator JojoWikWik', 
                             'actions' =>  
                             array ( 
                               0 =>  
                               array ( 
                                 'type' => 'uri', 
                                 'label' => 'Contact', 
-                                'uri' => 'https://line.me/ti/p/~rhnprmd', 
+                                'uri' => 'https://line.me/ti/p/~gabz78', 
                               ), 
                             ), 
                           ), 
