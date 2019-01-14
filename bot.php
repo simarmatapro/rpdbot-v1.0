@@ -346,41 +346,7 @@ if ($command == '/jam') {
         ); 
 }
 }
-#-------------------------[Close]-------------------------#
-if($message['type']=='text') {
-    if ($command == '/test') { 
-        
-        $result = quotes($options);
-        $balas = array( 
-            'replyToken' => $replyToken, 
-            'messages' => array( 
-                array ( 
-                        'type' => 'template', 
-                          'altText' => 'Quotes', 
-                          'template' =>  
-                          array ( 
-                            'type' => 'buttons', 
-                            'thumbnailImageUrl' => 'Error', 
-                            'imageAspectRatio' => 'rectangle', 
-                            'imageSize' => 'cover', 
-                            'imageBackgroundColor' => '#FFFFFF', 
-                            'title' => 'Halo', 
-                            'text' => $result, 
-                            'actions' =>  
-                            array ( 
-                              0 =>  
-                              array ( 
-                                'type' => 'text', 
-                                'label' => 'Done', 
-                                'text' => 'Terimakasih Bot',
-                              ), 
-                            ), 
-                          ), 
-                        ) 
-            ) 
-        ); 
-    }
-}
+#--------
 if($message['type']=='text') {
     if ($command == '/instagram') { 
         
@@ -437,22 +403,8 @@ if($message['type']=='text') {
 }
 #-------------------------[Close]-------------------------#
 #-------------------------[Open]-------------------------#
-if ($message['type'] == 'text') {
-    if ($command == '/definition') {
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => 'Definition : ' . urb_dict($options)
-                )
-            )
-        );
-    }
-}
 #-------------------------[Close]-------------------------#
 #-------------------------[Open]-------------------------#
-
 #-------------------------[Open]-------------------------#
 if($message['type']=='text') {
         if ($command == '/zodiak') {
@@ -506,21 +458,6 @@ if($message['type']=='text') {
 }
 #-------------------------[Close]-------------------------#
 #-------------------------[Open]-------------------------#
-if($message['type']=='text') {
-        if ($command == '/film-syn') {
-        $result = film_syn($options);
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array( 
-                    'type' => 'text',
-                    'text' => $result
-                )
-            )
-        );
-    }
-}
-#-------------------------[Close]-------------------------#
 #-------------------------[Open]-------------------------#
 if($message['type']=='text') {
         if ($command == '/film') {
